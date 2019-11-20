@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="login-info">
+    <view class="view-phone">
+      <image class="image-phone" src="/assets/ic_login_phone.png"></image>
+      <input class="input-phone-number" placeholder="请输入手机号" placeholder-class="input-hint" type="number"></input>
+    </view>
+
+    <view class="view-phone">
+      <image class="image-phone" src="/assets/ic_login_password.png"></image>
+      <input class="input-phone-number" placeholder="请输入密码" placeholder-class="input-hint" type="number" password="true"></input>
+    </view>
+
+    <view class="view-login">
+      <text class="text-login">登录</text>
+    </view>
+
+    <view class="view-row">
+      <text class="text-item margin-right">立即注册 ></text>
+      <text class="text-item">|</text>
+      <text class="text-item margin-left">忘记密码 ></text>
+    </view>
+  </view>
+</view>

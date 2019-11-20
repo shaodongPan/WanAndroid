@@ -3,6 +3,7 @@
     "pages/home/home",
     "pages/gank/gank",
     "pages/mine/mine",
+    "pages/login/login",
     "pages/article-detail/article-detail"
   ],
   "window": {

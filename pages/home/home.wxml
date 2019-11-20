@@ -8,12 +8,14 @@
     <block wx:for="{{aritlces}}" wx:key="{{item.link}}">
       <view class="item-article" bindtap="handlArticleClick" data-url="{{item.link}}">
         <text class="aricle-text-style">{{item.title}}</text>
+
         <view class="article-secondary-view">
           <text class="article-text-secondary fresh" wx:if="{{item.fresh}}">最新</text>
           <text class="article-text-secondary margin" wx:if="{{item.shareUser !=''}}">{{"分享人："+item.shareUser}}</text>
           <text class="article-text-secondary margin" wx:if="{{item.superChapterName !=''}}">{{"分类："+item.superChapterName}}</text>
           <text class="article-text-secondary margin">{{item.shareDate}}</text>
         </view>
+        
       </view>
     </block>
   </view>

@@ -1,2 +1,23 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine">
+  <view class="user-header-view">
+    <image class="user-header" src="/assets/ic_default_avatar.png" bindtap="handleLogin"></image>
+    <text class="user-name margin_top_default">{{userName}}</text>
+    <text class="user-id " wx:if="{{isLogin}}">ID:354492</text>
+  </view>
+
+  <view class="list-item">
+    <view class="user-item margin-top">
+      <image class="image-mine-item" src="/assets/ic_mine_collection.png"></image>
+      <text class="text-mine-item">我的收藏</text>
+      <image class="image-right-arrow" src="/assets/ic_right_arrow.png"></image>
+    </view>
+
+    <view class="user-item">
+      <image class="image-mine-item" src="/assets/ic_mine_setting.png"></image>
+      <text class="text-mine-item">设置</text>
+      <image class="image-right-arrow" src="/assets/ic_right_arrow.png"></image>
+    </view>
+
+  </view>
+</view>

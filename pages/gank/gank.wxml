@@ -1,2 +1,4 @@
 <!--pages/gank/gank.wxml-->
-<text>pages/gank/gank.wxml</text>
+<view class="mine">
+  <image class="user-header" src="assets/ic_default_avatar.png"></image>
+</view>

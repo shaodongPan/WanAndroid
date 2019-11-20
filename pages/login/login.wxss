@@ -1,0 +1,67 @@
+/* pages/login/login.wxss */
+
+.login-info {
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  flex-direction: column;
+}
+
+.view-phone {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #eaeaea;
+}
+
+.input-hint {
+  color: #8a8a8a;
+  font-size: 28rpx;
+}
+
+.input-phone-number {
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+
+.image-phone {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.view-login {
+  display: flex;
+  margin-top: 50rpx;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  background: #dbdbdb;
+}
+
+.text-login {
+  color: white;
+}
+
+.view-row {
+  padding: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-item {
+  color: #bba8ac;
+  font-size: 27rpx;
+}
+
+.margin-right {
+  margin-right: 50rpx;
+}
+
+.margin-left {
+  margin-left: 50rpx;
+}

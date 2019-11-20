@@ -1,60 +1,57 @@
 // pages/mine/mine.js
-Page({
 
+var app = getApp()
+
+Page({
   /**
    * 页面的初始数据
    */
   data: {
-
+    is_login: false,
+    userName: "请点击头像进行登录"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.checkUserIsLogin()
   },
 
   /**
-   * 生命周期函数--监听页面初次渲染完成
+   * 检测用户是否登录
    */
-  onReady: function() {
+  checkUserIsLogin: function() {
+    wx.getStorage({
+      key: app.globalData.user_info,
+      success: function(res) {
+        var userInfo = res.data
+        //取出用户信息
 
+      },
+      fail: () => {
+        this.setData({
+          is_login: false
+        })
+      }
+    })
   },
 
   /**
-   * 生命周期函数--监听页面显示
+   * 如果没有登录 前去登录，已经登录后不做处理
    */
-  onShow: function() {
+  handleLogin(event) {
+    console.log(this.data.is_login)
+    if (this.data.is_login) {
+      return
+    }
 
-  },
+    wx.navigateTo({
+      url: '/pages/login/login',
+      success: function(res) {
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
+      },
+    })
   },
 
   /**

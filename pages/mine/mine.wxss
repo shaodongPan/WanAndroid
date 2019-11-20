@@ -1,1 +1,65 @@
 /* pages/mine/mine.wxss */
+
+.user-header-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-header {
+  flex: 1;
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+}
+
+.user-name {
+  font-size: 36rpx;
+}
+
+.user-id {
+  color: #959698;
+  margin-top: 5rpx;
+  font-size: 30rpx;
+}
+
+.margin_top_default {
+  margin-top: 20rpx;
+}
+
+.user-item {
+  height: 130rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-right: 30rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #eaeaea;
+}
+
+.margin-top {
+  margin-top: 50rpx;
+}
+
+.text-mine-item {
+  margin-left: 30rpx;
+  text-align: center;
+  color: #868686;
+}
+
+.image-mine-item {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.image-right-arrow {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  right: 50rpx;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+}

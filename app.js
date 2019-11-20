@@ -40,6 +40,6 @@ App({
   },
 
   globalData:{
-    age :18
+    user_info: "user_info"
   }
 })
