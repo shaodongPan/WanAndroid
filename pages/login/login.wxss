@@ -50,6 +50,14 @@
   padding: 25rpx;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.view-row2{
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
@@ -65,3 +73,30 @@
 .margin-left {
   margin-left: 50rpx;
 }
+.divLine{
+ background: #E0E3DA;
+ width: 110rpx;
+ height: 2rpx;
+}
+.text-tip{
+  color: #F0F0F0;
+  font-size: 25rpx;
+}
+
+.image-other-login{
+  padding: 20rpx;
+  background: #F0F0F0;
+  border-radius: 70rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.view-cloum{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.view-margin-top{
+  margin-top: 30rpx;
+}
+
+ 
