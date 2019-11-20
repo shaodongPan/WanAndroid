@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-swiper": "/component/w-swiper/w-swiper"
+  },
+  "enablePullDownRefresh": false
+}
