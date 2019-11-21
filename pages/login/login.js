@@ -1,6 +1,10 @@
 // pages/login/login.js
 const app = getApp()
 
+import {
+  requestLogin
+} from '../../service/login.js'
+
 Page({
 
   /**
@@ -19,48 +23,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
 
   },
 
@@ -105,51 +67,50 @@ Page({
 
   handleLogin(event) {
     if (this.data.isCanLogin) {
-      wx.showLoading({
-        title: '登录中',
-      })
-      wx.request({
-        url: 'https://www.wanandroid.com/user/login',
-        data: {
-          username: this.data.phoneNumber,
-          password: this.data.password
-        },
-        header: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        method: 'post',
-        success: (res) => {
-          //存储用户信息
-          if (res.data.errorCode == 0) {
-            wx.setStorageSync(app.globalData.user_info, res.data.data)
-          }
-          wx.hideLoading()
-
-          wx.showToast({
-            title: '登录成功',
-            icon: 'none'
-          })
-
-          //返回我的页面
-          wx.navigateBack({
-            delta: 1
-          })
-
-        },
-        fail: () => {
-          wx.showToast({
-            title: '登录失败',
-            icon: 'none'
-          })
-        }
-      })
+      this.doLogin()
+    } else {
+      this.checkAndShowToast()
     }
   },
 
   /**
-   * 用户点击右上角分享
+   * 请求登录接口
    */
-  onShareAppMessage: function() {
+  doLogin() {
+    requestLogin({
+      username: this.data.phoneNumber,
+      password: this.data.password
+    }).then(res => {
+      if (res.data.errorCode == 0) {
+        wx.setStorageSync(app.globalData.user_info, res.data.data)
+      }
+      wx.showToast({
+        title: '登录成功',
+        icon: 'none'
+      })
+      //返回我的页面
+      wx.navigateBack({
+        delta: 1
+      })
+    }).catch(error => {
+      console.error(error)
+    })
+  },
 
-  }
+  /**
+   * 检测账号密码并提示
+   */
+  checkAndShowToast() {
+    if (this.data.phoneNumber == '') {
+      wx.showToast({
+        title: '请填写账号',
+        icon: 'none'
+      })
+    } else if (this.data.password == '') {
+      wx.showToast({
+        title: '请填写密码',
+        icon: 'none'
+      })
+    }
+  },
 })

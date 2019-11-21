@@ -1,4 +1,7 @@
-import requestGet from './network.js'
+import {
+  requestGet,
+  requestPost
+} from './network.js'
 
 /**
  * 获取文章列表内容
