@@ -1,18 +1,19 @@
 <!--pages/login/login.wxml-->
 <view class="login">
+
   <view class="login-info">
     <view class="view-phone">
       <image class="image-phone" src="/assets/ic_login_phone.png"></image>
-      <input class="input-phone-number" placeholder="请输入手机号" placeholder-class="input-hint" type="number"></input>
+      <input class="input-phone-number" placeholder="请输入账号" placeholder-class="input-hint" type="number" bindinput="inputPhoneNumber"></input>
     </view>
 
     <view class="view-phone">
       <image class="image-phone" src="/assets/ic_login_password.png"></image>
-      <input class="input-phone-number" placeholder="请输入密码" placeholder-class="input-hint" type="number" password="true"></input>
+      <input class="input-phone-number" placeholder="请输入密码" placeholder-class="input-hint" type="text" password="true" bindinput="inputPassword"></input>
     </view>
 
-    <view class="view-login">
-      <text class="text-login">登录</text>
+    <view class="view-login" style="background:{{loginBackground}}" bindtap="handleLogin">
+      <text class="text-login" style="color:{{loginTextColor}}">登录</text>
     </view>
 
     <view class="view-row">
@@ -32,6 +33,7 @@
         <image class="image-other-login " src="/assets/ic_wechat.png"></image>
         <text class="view-margin-top input-hint">微信</text>
       </view>
+
       <view class="view-cloum margin-left">
         <image class="image-other-login " src="/assets/ic_weibo.png"></image>
         <text class="view-margin-top input-hint">微博</text>

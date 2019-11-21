@@ -1,4 +1,10 @@
 // pages/home/home.js
+
+import {
+  getArticleData,
+  getArticleBanner
+} from '../../service/home.js'
+
 Page({
 
   /**
@@ -28,24 +34,20 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    wx.request({
-      url: 'https://www.wanandroid.com/banner/json',
-      success: (res) => {
-        var bannerData = res.data.data
-        this.setData({
-          urls: bannerData
-        })
-      }
+
+    getArticleBanner().then(res => {
+      console.log(res)
+      var bannerData = res.data
+      this.setData({
+        urls: bannerData
+      })
     })
 
-    wx.request({
-      url: 'https://www.wanandroid.com/article/list/0/json',
-      success: (res) => {
-        var articleData = res.data.data.datas
-        this.setData({
-          aritlces: articleData
-        })
-      }
+    getArticleData().then(res => {
+      var articleData = res.data.datas
+      this.setData({
+        aritlces: articleData
+      })
     })
   },
 
