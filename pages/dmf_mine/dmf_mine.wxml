@@ -28,7 +28,7 @@
         <text class="text-money-item">福友店铺</text>
       </view>
 
-      <view class="view-money-item">
+      <view class="view-money-item" bindtap="startMoneyPages">
         <image class="image-money-item" src='../../assets/ic_wallet.png'></image>
         <text class="text-money-item">钱包</text>
       </view>
@@ -77,11 +77,11 @@
     <view class="view-margin" />
 
     <view class="view-panel">
-       <text class="text-control-panel">控制面板</text>
+      <text class="text-control-panel">控制面板</text>
     </view>
 
     <view class="view-control-panel">
-     <view class="view-control-item">
+      <view class="view-control-item">
         <image class="image-control-item" src='../../assets/ic_data.png'></image>
         <text class="text-control-item">修改资料</text>
       </view>

@@ -72,6 +72,13 @@
 					"id": -1,
 					"name": "dmf",
 					"pathName": "pages/dmf_mine/dmf_mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "钱包",
+					"pathName": "pages/money/money",
 					"scene": null
 				}
 			]

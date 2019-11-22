@@ -1,0 +1,5 @@
+<!--pages/money/money.wxml-->
+<view class="container2">
+  <text>模拟折线图</text>
+  <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>

@@ -4,6 +4,7 @@
     "pages/gank/gank",
     "pages/dmf_mine/dmf_mine",
     "pages/mine/mine",
+    "pages/money/money",
     "pages/login/login",
     "pages/article-detail/article-detail"
   ],
