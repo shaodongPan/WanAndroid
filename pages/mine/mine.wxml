@@ -3,7 +3,7 @@
   <view class="user-header-view">
     <image class="user-header" src="/assets/ic_default_avatar.png" bindtap="handleLogin"></image>
     <text class="user-name margin_top_default">{{userName}}</text>
-    <text class="user-id " wx:if="{{isLogin}}">ID:354492</text>
+    <text class="user-id " wx:if="{{isLogin}}">ID:{{userId}}</text>
   </view>
 
   <view class="list-item">
@@ -15,7 +15,7 @@
 
     <view class="user-item">
       <image class="image-mine-item" src="/assets/ic_mine_setting.png"></image>
-      <text class="text-mine-item">设置</text>
+      <text class="text-mine-item" bindtap="handleSetting">设置</text>
       <image class="image-right-arrow" src="/assets/ic_right_arrow.png"></image>
     </view>
 

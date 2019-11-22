@@ -30,7 +30,8 @@
 
     <view class="view-row2">
       <view class="view-cloum margin-right">
-        <image class="image-other-login " src="/assets/ic_wechat.png"></image>
+      
+        <image class="image-other-login " src="/assets/ic_wechat.png" ></image>
         <text class="view-margin-top input-hint">微信</text>
       </view>
 

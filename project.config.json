@@ -65,6 +65,13 @@
 					"id": -1,
 					"name": "登录",
 					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "dmf",
+					"pathName": "pages/dmf_mine/dmf_mine",
 					"scene": null
 				}
 			]

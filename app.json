@@ -2,13 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/gank/gank",
+    "pages/dmf_mine/dmf_mine",
     "pages/mine/mine",
     "pages/login/login",
     "pages/article-detail/article-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#FC7130",
     "navigationBarTitleText": "WanAndroid",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
@@ -21,6 +22,12 @@
     "list": [
       {
         "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "assets/ic_home_unselect.png",
+        "selectedIconPath": "assets/ic_home_select.png"
+      },
+      {
+        "pagePath": "pages/dmf_mine/dmf_mine",
         "text": "主页",
         "iconPath": "assets/ic_home_unselect.png",
         "selectedIconPath": "assets/ic_home_select.png"

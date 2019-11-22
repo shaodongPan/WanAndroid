@@ -40,6 +40,6 @@ App({
   },
 
   globalData:{
-    user_info: "user_info"
+    user_info: "user_info",
   }
 })

@@ -1,5 +1,6 @@
 // pages/login/login.js
 const app = getApp()
+let flashEvent = require('../../utils/FlashEvent.js');
 
 import {
   requestLogin
@@ -81,22 +82,23 @@ Page({
       username: this.data.phoneNumber,
       password: this.data.password
     }).then(res => {
-      if (res.data.errorCode == 0) {
-        wx.setStorageSync(app.globalData.user_info, res.data.data)
+      if (res.errorCode == 0) {
+        
+        wx.setStorageSync(app.globalData.user_info, res.data)
+
+        //通知我的页面登录成功
+        flashEvent.post(flashEvent.EVENT_KEYS.LOGIN_SUCCESS, '登录成功');
+
+        //返回我的页面
+        wx.navigateBack({
+          delta: 1
+        })
       }
-      wx.showToast({
-        title: '登录成功',
-        icon: 'none'
-      })
-      //返回我的页面
-      wx.navigateBack({
-        delta: 1
-      })
     }).catch(error => {
       console.error(error)
     })
   },
-
+  
   /**
    * 检测账号密码并提示
    */

@@ -1,0 +1,53 @@
+<!--pages/dmf_mine/dmf_mine.wxml-->
+<view class="dmf_mine">
+
+  <view class="view-backgournd" />
+  
+  <image class="view-whole" src='../../assets/ic_mine_bg.png' />
+
+  <view class="view-header">
+    <image class="image-header" src='../../assets/app_name.png'></image>
+    <text class="text-phone">15890009824</text>
+    <text class="text-code">邀请码5442</text>
+    <view class="btn-sign">
+      <text class="text-sign">签到</text>
+    </view>
+  </view>
+
+<view class="view-cloumn">
+    <view class="view-default-color"></view>
+  </view>
+
+  <view class="view-money">
+    <view class="view-money-item border-line">
+      <image class="image-money-item" src='../../assets/ic_zeng.png'></image>
+      <text class="text-money-item">DMF</text>
+    </view>
+
+    <view class="view-money-item border-line">
+      <image class="image-money-item" src='../../assets/ic_shang.png'></image>
+      <text class="text-money-item">福友店铺</text>
+    </view>
+
+    <view class="view-money-item">
+      <image class="image-money-item" src='../../assets/ic_wallet.png'></image>
+      <text class="text-money-item">钱包</text>
+    </view>
+
+    <view class="view-money-item border-line">
+      <image class="image-money-item" src='../../assets/ic_hui.png'></image>
+      <text class="text-money-item">惠民积分</text>
+    </view>
+
+    <view class="view-money-item border-line">
+      <image class="image-money-item" src='../../assets/ic_jin.png'></image>
+      <text class="text-money-item">金元</text>
+    </view>
+
+    <view class="view-money-item">
+      <image class="image-money-item" src='../../assets/ic_balance.png'></image>
+      <text class="text-money-item">余额</text>
+    </view>
+  </view>
+
+</view>

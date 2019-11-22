@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "福友中心",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#FC7130",
+  "enablePullDownRefresh": false
+
+}
