@@ -2,7 +2,7 @@
 <view class="dmf_mine">
 
   <view class="view-backgournd" />
-  
+
   <image class="view-whole" src='../../assets/ic_mine_bg.png' />
 
   <view class="view-header">
@@ -14,40 +14,97 @@
     </view>
   </view>
 
-<view class="view-cloumn">
+  <view class="view-cloumn">
     <view class="view-default-color"></view>
+
+    <view class="view-money">
+      <view class="view-money-item border-line">
+        <image class="image-money-item" src='../../assets/ic_zeng.png'></image>
+        <text class="text-money-item">DMF</text>
+      </view>
+
+      <view class="view-money-item border-line">
+        <image class="image-money-item" src='../../assets/ic_shang.png'></image>
+        <text class="text-money-item">福友店铺</text>
+      </view>
+
+      <view class="view-money-item">
+        <image class="image-money-item" src='../../assets/ic_wallet.png'></image>
+        <text class="text-money-item">钱包</text>
+      </view>
+
+      <view class="view-money-item border-line">
+        <image class="image-money-item" src='../../assets/ic_hui.png'></image>
+        <text class="text-money-item">惠民积分</text>
+      </view>
+
+      <view class="view-money-item border-line">
+        <image class="image-money-item" src='../../assets/ic_jin.png'></image>
+        <text class="text-money-item">金元</text>
+      </view>
+
+      <view class="view-money-item">
+        <image class="image-money-item" src='../../assets/ic_balance.png'></image>
+        <text class="text-money-item">余额</text>
+      </view>
+    </view>
+
+    <view class="view-margin" />
+
+    <view class="view-control">
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/man_image.png'></image>
+        <text class="text-control-item">实名认证</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/announcement.png'></image>
+        <text class="text-control-item">公告</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_shop2.png'></image>
+        <text class="text-control-item">店铺信息</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/share_load.png'></image>
+        <text class="text-control-item">分享下载</text>
+      </view>
+    </view>
+
+    <view class="view-margin" />
+
+    <view class="view-panel">
+       <text class="text-control-panel">控制面板</text>
+    </view>
+
+    <view class="view-control-panel">
+     <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_data.png'></image>
+        <text class="text-control-item">修改资料</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_password.png'></image>
+        <text class="text-control-item">登录密码</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_transaction_password.png'></image>
+        <text class="text-control-item">交易密码</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_setting.png'></image>
+        <text class="text-control-item">系统设置</text>
+      </view>
+
+      <view class="view-control-item">
+        <image class="image-control-item" src='../../assets/ic_logout.png'></image>
+        <text class="text-control-item">退出登录</text>
+      </view>
+    </view>
   </view>
-
-  <view class="view-money">
-    <view class="view-money-item border-line">
-      <image class="image-money-item" src='../../assets/ic_zeng.png'></image>
-      <text class="text-money-item">DMF</text>
-    </view>
-
-    <view class="view-money-item border-line">
-      <image class="image-money-item" src='../../assets/ic_shang.png'></image>
-      <text class="text-money-item">福友店铺</text>
-    </view>
-
-    <view class="view-money-item">
-      <image class="image-money-item" src='../../assets/ic_wallet.png'></image>
-      <text class="text-money-item">钱包</text>
-    </view>
-
-    <view class="view-money-item border-line">
-      <image class="image-money-item" src='../../assets/ic_hui.png'></image>
-      <text class="text-money-item">惠民积分</text>
-    </view>
-
-    <view class="view-money-item border-line">
-      <image class="image-money-item" src='../../assets/ic_jin.png'></image>
-      <text class="text-money-item">金元</text>
-    </view>
-
-    <view class="view-money-item">
-      <image class="image-money-item" src='../../assets/ic_balance.png'></image>
-      <text class="text-money-item">余额</text>
-    </view>
-  </view>
-
 </view>
